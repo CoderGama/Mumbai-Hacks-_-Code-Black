@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  AlertTriangle, Users, Route, Clock, 
+import {
+  AlertTriangle, Users, Route, Clock,
   Droplets, Package, Heart, Home,
   RefreshCw, TrendingUp, TrendingDown
 } from 'lucide-react';
@@ -12,6 +12,7 @@ import RouteTable from '../components/RouteTable';
 import ActivityFeed from '../components/ActivityFeed';
 import InventoryPanel from '../components/InventoryPanel';
 import './Dashboard.css';
+import { useSync } from '../context/SyncContext';
 
 export default function Dashboard() {
   const [stats, setStats] = useState(null);
@@ -21,6 +22,7 @@ export default function Dashboard() {
   const [activityLogs, setActivityLogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [lastDecision, setLastDecision] = useState(null);
+  const { timestamp } = useSync();
 
   const fetchData = async () => {
     try {
@@ -31,7 +33,6 @@ export default function Dashboard() {
         api.getInventory(),
         api.getActivityLogs()
       ]);
-      
       setStats(statsData);
       setZones(zonesData);
       setRoutes(routesData);
@@ -44,16 +45,15 @@ export default function Dashboard() {
     }
   };
 
+  // Unified polling: fetch on every context timestamp
   useEffect(() => {
     fetchData();
-    const interval = setInterval(fetchData, 30000); // Refresh every 30s
-    return () => clearInterval(interval);
-  }, []);
+    // eslint-disable-next-line
+  }, [timestamp]);
 
   const handleAgentResult = (result) => {
     setLastDecision(result.decision);
-    // Refresh data after agent decision
-    fetchData();
+    fetchData(); // Fetch immediately on new agent run
   };
 
   const containerVariants = {
@@ -143,9 +143,11 @@ export default function Dashboard() {
           <motion.section className="section" variants={itemVariants}>
             <div className="section-header">
               <h2>Supply Routes</h2>
-              <button className="btn btn-ghost btn-sm">View All</button>
+              <span className="section-badge">{routes.length} active</span>
             </div>
-            <RouteTable routes={routes} />
+            <div className="routes-scroll-container">
+              <RouteTable routes={routes} />
+            </div>
           </motion.section>
 
           {/* Inventory Overview */}

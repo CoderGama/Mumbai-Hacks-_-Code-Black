@@ -31,14 +31,10 @@ export default function Login() {
     }
   };
 
-  const handleDemoLogin = async (role) => {
+  const handleDemoLogin = async () => {
     setIsLoading(true);
     try {
-      const credentials = role === 'admin' 
-        ? { email: 'admin@reliefroute.org', password: 'admin123' }
-        : { email: 'coordinator@reliefroute.org', password: 'coord123' };
-      
-      const user = await api.login(credentials.email, credentials.password);
+      const user = await api.login('admin@reliefroute.org', 'admin123');
       login(user);
       navigate('/dashboard');
     } catch (err) {
@@ -129,25 +125,17 @@ export default function Login() {
           </button>
 
           <div className="auth-divider">
-            <span>or try demo accounts</span>
+            <span>or try demo account</span>
           </div>
 
           <div className="demo-buttons">
             <button
               type="button"
-              className="btn btn-ghost"
-              onClick={() => handleDemoLogin('admin')}
+              className="btn btn-ghost w-full"
+              onClick={handleDemoLogin}
               disabled={isLoading}
             >
-              Admin Demo
-            </button>
-            <button
-              type="button"
-              className="btn btn-ghost"
-              onClick={() => handleDemoLogin('coordinator')}
-              disabled={isLoading}
-            >
-              Coordinator Demo
+              Demo Login (Admin)
             </button>
           </div>
         </form>
@@ -186,7 +174,7 @@ export default function Login() {
         >
           <div className="feature-icon">🗺️</div>
           <h3>Smart Routing</h3>
-          <p>A* optimized supply chains</p>
+          <p>Optimized supply chains</p>
         </motion.div>
       </div>
     </div>

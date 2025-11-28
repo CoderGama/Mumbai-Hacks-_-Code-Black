@@ -95,22 +95,8 @@ export default function ScenarioPanel({ onResult, lastDecision }) {
 
   return (
     <div className="scenario-panel">
-      {/* Quick Presets */}
-      <div className="presets-section">
-        <h3><Zap size={18} /> Quick Scenarios</h3>
-        <div className="preset-chips">
-          {presets.map((preset) => (
-            <button
-              key={preset.id}
-              className="preset-chip"
-              onClick={() => handlePresetClick(preset)}
-              disabled={isLoading}
-            >
-              <span className="preset-icon">{preset.icon}</span>
-              <span>{preset.name}</span>
-            </button>
-          ))}
-        </div>
+      <div className="scenario-header">
+        <h3><Brain size={18} /> AI Scenario Request</h3>
       </div>
 
       {/* Manual Request Form */}

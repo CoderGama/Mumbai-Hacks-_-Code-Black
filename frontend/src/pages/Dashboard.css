@@ -144,6 +144,32 @@
   min-width: 0;
 }
 
+/* Routes Scroll Container */
+.routes-scroll-container {
+  max-height: 320px;
+  overflow-y: auto;
+  margin: -0.5rem;
+  padding: 0.5rem;
+}
+
+.routes-scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.routes-scroll-container::-webkit-scrollbar-track {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+}
+
+.routes-scroll-container::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+  border-radius: var(--radius-full);
+}
+
+.routes-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
 /* Scenario Section */
 .scenario-section {
   padding: 0;

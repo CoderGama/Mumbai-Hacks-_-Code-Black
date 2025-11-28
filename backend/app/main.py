@@ -45,14 +45,7 @@ users_db = {
         "name": "Admin User",
         "email": "admin@reliefroute.org",
         "password": "admin123",
-        "role": "administrator"
-    },
-    "coordinator@reliefroute.org": {
-        "id": "user_002",
-        "name": "Field Coordinator",
-        "email": "coordinator@reliefroute.org",
-        "password": "coord123",
-        "role": "coordinator"
+        "role": "admin"
     }
 }
 
@@ -408,15 +401,28 @@ async def dispatch_vehicle(request: DispatchRequest):
 
 @app.get("/api/map/routes")
 async def get_map_routes():
-    """Get all route data for map visualization"""
+    """Get all route data for map visualization with real road geometry"""
     from .scenarios import ROAD_NETWORK
+    from .ors_client import get_route_with_fallback
     
     routes_with_coords = []
     for route in active_routes:
-        path_coords = []
+        # Get waypoints from path nodes
+        waypoints = []
         for node in route.path:
             if node in ROAD_NETWORK["nodes"]:
-                path_coords.append(ROAD_NETWORK["nodes"][node]["coordinates"])
+                coords = ROAD_NETWORK["nodes"][node]["coordinates"]
+                waypoints.append(tuple(coords))
+        
+        # Try to get real road geometry
+        if len(waypoints) >= 2:
+            try:
+                path_coords = await get_route_with_fallback(waypoints)
+            except Exception as e:
+                print(f"Failed to get road geometry: {e}")
+                path_coords = [list(wp) for wp in waypoints]
+        else:
+            path_coords = [list(wp) for wp in waypoints]
         
         routes_with_coords.append({
             **route.dict(),

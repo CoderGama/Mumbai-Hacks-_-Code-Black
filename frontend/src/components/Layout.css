@@ -25,15 +25,27 @@
 .sidebar-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem;
+  justify-content: center;
+  padding: 1rem;
+  height: 70px;
   border-bottom: 1px solid var(--border-secondary);
 }
 
-.logo {
+/* Logo button - clickable for collapse/expand */
+.logo-btn {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.logo-btn:hover {
+  background: var(--bg-tertiary);
 }
 
 .logo-icon {
@@ -53,27 +65,13 @@
   white-space: nowrap;
 }
 
-.sidebar-toggle {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: var(--radius-sm);
-  transition: all var(--transition-fast);
-}
-
-.sidebar-toggle:hover {
-  background: var(--bg-tertiary);
-  color: var(--text-primary);
-}
-
 .sidebar-nav {
   flex: 1;
   padding: 1rem 0.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.375rem;
+  overflow-y: auto;
 }
 
 .nav-item {
@@ -146,7 +144,7 @@
   color: var(--accent-cyan);
 }
 
-/* Main Wrapper */
+/* Main Wrapper - aligned with sidebar */
 .main-wrapper {
   flex: 1;
   margin-left: 260px;
@@ -156,16 +154,17 @@
   min-height: 100vh;
 }
 
-.sidebar.collapsed + .main-wrapper {
+.sidebar.collapsed ~ .main-wrapper {
   margin-left: 70px;
 }
 
-/* Top Navigation */
+/* Top Navigation - aligned with sidebar header height */
 .topnav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 0 1.5rem;
+  height: 70px;
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-secondary);
   position: sticky;
@@ -175,9 +174,10 @@
 
 .topnav-left {
   flex: 1;
-  max-width: 400px;
+  max-width: 480px;
 }
 
+/* Search Bar with Results */
 .search-bar {
   display: flex;
   align-items: center;
@@ -187,6 +187,12 @@
   border: 1px solid var(--border-secondary);
   border-radius: var(--radius-md);
   color: var(--text-muted);
+  position: relative;
+}
+
+.search-bar:focus-within {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.1);
 }
 
 .search-bar input {
@@ -201,6 +207,94 @@
 
 .search-bar input::placeholder {
   color: var(--text-muted);
+}
+
+.search-clear {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+}
+
+.search-clear:hover {
+  color: var(--text-primary);
+  background: var(--bg-elevated);
+}
+
+/* Search Results Dropdown */
+.search-results {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  border-bottom: 1px solid var(--border-dim);
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background: var(--bg-tertiary);
+}
+
+.result-icon {
+  flex-shrink: 0;
+  color: var(--text-muted);
+}
+
+.result-icon.zone { color: var(--accent-red); }
+.result-icon.vehicle { color: var(--accent-cyan); }
+.result-icon.decision { color: var(--accent-purple); }
+.result-icon.depot { color: var(--accent-green); }
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.result-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.result-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.search-no-results {
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
 }
 
 .topnav-right {
@@ -328,6 +422,27 @@
   font-weight: 600;
 }
 
+/* Mark all read button */
+.dropdown-header .text-cyan {
+  color: var(--accent-cyan);
+  background: none;
+  border: none;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.dropdown-header .text-cyan:hover {
+  background: rgba(0, 212, 255, 0.1);
+}
+
+.dropdown-header .text-sm {
+  font-size: 0.8125rem;
+}
+
 .dropdown-item {
   display: flex;
   align-items: center;
@@ -342,6 +457,7 @@
   cursor: pointer;
   transition: all var(--transition-fast);
   text-align: left;
+  text-decoration: none;
   pointer-events: auto;
   position: relative;
   z-index: 1001;
@@ -353,7 +469,7 @@
 }
 
 .notification-dropdown {
-  width: 320px;
+  width: 360px;
 }
 
 .notification-item {
@@ -362,6 +478,7 @@
   padding: 0.875rem 1rem;
   border-bottom: 1px solid var(--border-dim);
   transition: background var(--transition-fast);
+  align-items: flex-start;
 }
 
 .notification-item:hover {
@@ -370,6 +487,10 @@
 
 .notification-item:last-child {
   border-bottom: none;
+}
+
+.notification-item.read {
+  opacity: 0.6;
 }
 
 .notification-dot {
@@ -384,6 +505,11 @@
 .notification-dot.decision { background: var(--accent-cyan); }
 .notification-dot.dispatch { background: var(--accent-green); }
 
+.notification-content {
+  flex: 1;
+  min-width: 0;
+}
+
 .notification-content p {
   font-size: 0.875rem;
   color: var(--text-primary);
@@ -395,6 +521,36 @@
   color: var(--text-muted);
 }
 
+.notification-actions {
+  display: flex;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.notification-actions button {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-actions button:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.notification-empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
 
 /* Main Content */
 .main-content {
@@ -424,7 +580,7 @@
 
 @media (max-width: 640px) {
   .topnav {
-    padding: 0.75rem 1rem;
+    padding: 0 1rem;
   }
   
   .search-bar {
@@ -435,4 +591,3 @@
     display: none;
   }
 }
-
