@@ -1,0 +1,51 @@
+{
+  "id": "earthquake_m65_5_7",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 19781,
+  "zones_affected": [
+    "East",
+    "North",
+    "West",
+    "Central",
+    "South"
+  ],
+  "zones_impacted": [
+    "East",
+    "North",
+    "West",
+    "Central",
+    "South"
+  ],
+  "hospital_load": 0.93,
+  "hospital_load_pct": 93,
+  "blocked_roads": [
+    "Mount Road",
+    "Velachery Road",
+    "OMR",
+    "GST Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 2822,
+    "trucks": 19,
+    "drones": 13,
+    "food_packets": 3653,
+    "water_liters": 56705,
+    "shelter_kits": 305,
+    "boats": 0,
+    "helicopters": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 66,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 6.4,
+      "epicenter_distance_km": 23,
+      "building_collapse_ratio": 0.26
+    }
+  },
+  "notes": "Critical earthquake M6.5"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "cyclone_NE_10_4_2",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 13089,
+  "zones_affected": [
+    "Central",
+    "East",
+    "South",
+    "North"
+  ],
+  "zones_impacted": [
+    "Central",
+    "East",
+    "South",
+    "North"
+  ],
+  "hospital_load": 0.89,
+  "hospital_load_pct": 89,
+  "blocked_roads": [
+    "Anna Salai",
+    "Velachery Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1489,
+    "trucks": 13,
+    "drones": 4,
+    "food_packets": 2851,
+    "water_liters": 42914,
+    "shelter_kits": 180,
+    "boats": 7,
+    "helicopters": 3
+  },
+  "outcome": "successful",
+  "response_time_min": 63,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 105,
+      "cyclone_translation_speed_kmph": 16,
+      "cyclone_direction": "NE"
+    }
+  },
+  "notes": "Very High cyclone moving NE"
+}

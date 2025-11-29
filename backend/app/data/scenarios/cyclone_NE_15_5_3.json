@@ -1,0 +1,46 @@
+{
+  "id": "cyclone_NE_15_5_3",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 25945,
+  "zones_affected": [
+    "Central",
+    "West",
+    "East"
+  ],
+  "zones_impacted": [
+    "Central",
+    "West",
+    "East"
+  ],
+  "hospital_load": 0.99,
+  "hospital_load_pct": 99,
+  "blocked_roads": [
+    "Mount Road",
+    "ECR",
+    "GST Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 3153,
+    "trucks": 11,
+    "drones": 3,
+    "food_packets": 5385,
+    "water_liters": 89381,
+    "shelter_kits": 448,
+    "boats": 8,
+    "helicopters": 4
+  },
+  "outcome": "successful",
+  "response_time_min": 67,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 150,
+      "cyclone_translation_speed_kmph": 22,
+      "cyclone_direction": "NE"
+    }
+  },
+  "notes": "Critical cyclone moving NE"
+}

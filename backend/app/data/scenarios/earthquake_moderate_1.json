@@ -1,0 +1,34 @@
+{
+  "id": "earthquake_moderate_1",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 22000,
+  "zones_affected": ["Central", "West"],
+  "zones_impacted": ["Central", "West"],
+  "hospital_load": 0.62,
+  "hospital_load_pct": 62,
+  "blocked_roads": ["Anna Salai"],
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 5.2,
+      "epicenter_distance_km": 45,
+      "building_collapse_ratio": 0.08
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 1760,
+    "boats": 1,
+    "trucks": 10,
+    "drones": 5,
+    "food_packets": 4400,
+    "water_liters": 66000,
+    "shelter_kits": 220
+  },
+  "outcome": "successful",
+  "response_time_min": 40,
+  "notes": "Moderate earthquake with limited damage"
+}
+

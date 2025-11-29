@@ -1,0 +1,45 @@
+{
+  "id": "earthquake_m50_4_4",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 15032,
+  "zones_affected": [
+    "Central",
+    "East",
+    "South"
+  ],
+  "zones_impacted": [
+    "Central",
+    "East",
+    "South"
+  ],
+  "hospital_load": 0.82,
+  "hospital_load_pct": 82,
+  "blocked_roads": [
+    "Anna Salai",
+    "Marina"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1766,
+    "trucks": 14,
+    "drones": 9,
+    "food_packets": 2794,
+    "water_liters": 44436,
+    "shelter_kits": 222,
+    "boats": 0,
+    "helicopters": 1
+  },
+  "outcome": "successful",
+  "response_time_min": 56,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 5.0,
+      "epicenter_distance_km": 60,
+      "building_collapse_ratio": 0.1
+    }
+  },
+  "notes": "Very High earthquake M5.0"
+}

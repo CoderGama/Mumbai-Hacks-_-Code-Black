@@ -6,6 +6,7 @@ import {
   ChevronDown, ChevronUp
 } from 'lucide-react';
 import { api } from '../services/api';
+import { useSync } from '../context/SyncContext';
 import './Decisions.css';
 
 export default function Decisions() {
@@ -13,12 +14,12 @@ export default function Decisions() {
   const [isLoading, setIsLoading] = useState(true);
   const [expandedId, setExpandedId] = useState(null);
   const [actionLoading, setActionLoading] = useState(null);
+  const { dashboardTimestamp } = useSync();
 
+  // Fetch when dashboardTimestamp changes (controlled by SyncContext based on settings)
   useEffect(() => {
     fetchDecisions();
-    const interval = setInterval(fetchDecisions, 15000);
-    return () => clearInterval(interval);
-  }, []);
+  }, [dashboardTimestamp]);
 
   const fetchDecisions = async () => {
     try {

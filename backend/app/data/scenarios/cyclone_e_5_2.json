@@ -1,0 +1,51 @@
+{
+  "id": "cyclone_e_5_2",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 81977,
+  "zones_affected": [
+    "Central",
+    "East",
+    "North",
+    "West",
+    "South"
+  ],
+  "zones_impacted": [
+    "Central",
+    "East",
+    "North",
+    "West",
+    "South"
+  ],
+  "hospital_load": 0.96,
+  "hospital_load_pct": 96,
+  "blocked_roads": [
+    "Marina",
+    "GST Road",
+    "Anna Salai",
+    "ECR"
+  ],
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 233,
+      "cyclone_translation_speed_kmph": 25,
+      "cyclone_direction": "E"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 11055,
+    "boats": 10,
+    "trucks": 22,
+    "drones": 13,
+    "helicopters": 4,
+    "food_packets": 16913,
+    "water_liters": 247157,
+    "shelter_kits": 856
+  },
+  "outcome": "successful",
+  "response_time_min": 80,
+  "notes": "Critical cyclone moving E"
+}

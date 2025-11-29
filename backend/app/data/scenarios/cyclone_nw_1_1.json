@@ -1,0 +1,43 @@
+{
+  "id": "cyclone_nw_1_1",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 1,
+  "severity_level": 1,
+  "severity_label": "Low",
+  "population_affected": 15468,
+  "zones_affected": [
+    "Central",
+    "East"
+  ],
+  "zones_impacted": [
+    "Central",
+    "East"
+  ],
+  "hospital_load": 0.46,
+  "hospital_load_pct": 46,
+  "blocked_roads": [
+    "OMR",
+    "Anna Salai"
+  ],
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 116,
+      "cyclone_translation_speed_kmph": 19,
+      "cyclone_direction": "NW"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 598,
+    "boats": 4,
+    "trucks": 9,
+    "drones": 5,
+    "helicopters": 0,
+    "food_packets": 3688,
+    "water_liters": 57534,
+    "shelter_kits": 169
+  },
+  "outcome": "successful",
+  "response_time_min": 39,
+  "notes": "Low cyclone moving NW"
+}

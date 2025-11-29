@@ -1,0 +1,47 @@
+{
+  "id": "earthquake_m80_5_10",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 22606,
+  "zones_affected": [
+    "Central",
+    "East",
+    "West"
+  ],
+  "zones_impacted": [
+    "Central",
+    "East",
+    "West"
+  ],
+  "hospital_load": 0.95,
+  "hospital_load_pct": 95,
+  "blocked_roads": [
+    "Mount Road",
+    "Marina",
+    "ECR",
+    "OMR"
+  ],
+  "resources_deployed": {
+    "medical_kits": 2965,
+    "trucks": 14,
+    "drones": 7,
+    "food_packets": 4443,
+    "water_liters": 73521,
+    "shelter_kits": 422,
+    "boats": 0,
+    "helicopters": 1
+  },
+  "outcome": "successful",
+  "response_time_min": 65,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 8.2,
+      "epicenter_distance_km": 8,
+      "building_collapse_ratio": 0.47
+    }
+  },
+  "notes": "Critical earthquake M8.0"
+}

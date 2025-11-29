@@ -1,0 +1,46 @@
+{
+  "id": "cyclone_E_13_5_5",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 18611,
+  "zones_affected": [
+    "West",
+    "East",
+    "Central"
+  ],
+  "zones_impacted": [
+    "West",
+    "East",
+    "Central"
+  ],
+  "hospital_load": 0.94,
+  "hospital_load_pct": 94,
+  "blocked_roads": [
+    "ECR",
+    "Mount Road",
+    "OMR"
+  ],
+  "resources_deployed": {
+    "medical_kits": 2781,
+    "trucks": 13,
+    "drones": 4,
+    "food_packets": 3797,
+    "water_liters": 55844,
+    "shelter_kits": 339,
+    "boats": 10,
+    "helicopters": 4
+  },
+  "outcome": "successful",
+  "response_time_min": 69,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 122,
+      "cyclone_translation_speed_kmph": 21,
+      "cyclone_direction": "E"
+    }
+  },
+  "notes": "Critical cyclone moving E"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "earthquake_severe_1",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 65000,
+  "zones_affected": ["Central", "West", "South"],
+  "zones_impacted": ["Central", "West", "South"],
+  "hospital_load": 0.88,
+  "hospital_load_pct": 88,
+  "blocked_roads": ["Anna Salai", "Mount Road", "GST Road"],
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 6.5,
+      "epicenter_distance_km": 25,
+      "building_collapse_ratio": 0.18
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 5200,
+    "boats": 2,
+    "trucks": 25,
+    "drones": 12,
+    "helicopters": 2,
+    "food_packets": 13000,
+    "water_liters": 195000,
+    "shelter_kits": 650
+  },
+  "outcome": "successful",
+  "response_time_min": 65,
+  "notes": "Severe earthquake with significant building damage"
+}
+

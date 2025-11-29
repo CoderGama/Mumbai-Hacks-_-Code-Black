@@ -1,0 +1,44 @@
+{
+  "id": "flood_in_4_3_7",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 8447,
+  "zones_affected": [
+    "North",
+    "South",
+    "West"
+  ],
+  "zones_impacted": [
+    "North",
+    "South",
+    "West"
+  ],
+  "hospital_load": 0.63,
+  "hospital_load_pct": 63,
+  "blocked_roads": [
+    "Velachery Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 618,
+    "trucks": 9,
+    "drones": 3,
+    "food_packets": 1706,
+    "water_liters": 23505,
+    "shelter_kits": 81,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 57,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 0.5,
+      "rainfall_mm_24h": 150,
+      "inland_or_coastal": "inland"
+    }
+  },
+  "notes": "High inland flood"
+}

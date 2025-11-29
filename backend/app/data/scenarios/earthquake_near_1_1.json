@@ -1,0 +1,38 @@
+{
+  "id": "earthquake_near_1_1",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 1,
+  "severity_level": 1,
+  "severity_label": "Low",
+  "population_affected": 31883,
+  "zones_affected": [
+    "South"
+  ],
+  "zones_impacted": [
+    "South"
+  ],
+  "hospital_load": 0.59,
+  "hospital_load_pct": 59,
+  "blocked_roads": [],
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 4.3,
+      "epicenter_distance_km": 23,
+      "building_collapse_ratio": 0.01
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 1041,
+    "boats": 0,
+    "trucks": 6,
+    "drones": 8,
+    "helicopters": 0,
+    "food_packets": 6780,
+    "water_liters": 90355,
+    "shelter_kits": 348
+  },
+  "outcome": "successful",
+  "response_time_min": 39,
+  "notes": "Low earthquake, epicenter 23km away"
+}

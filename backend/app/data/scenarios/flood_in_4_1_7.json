@@ -1,0 +1,42 @@
+{
+  "id": "flood_in_4_1_7",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 1,
+  "severity_level": 1,
+  "severity_label": "Low",
+  "population_affected": 5712,
+  "zones_affected": [
+    "South",
+    "East",
+    "Central"
+  ],
+  "zones_impacted": [
+    "South",
+    "East",
+    "Central"
+  ],
+  "hospital_load": 0.41,
+  "hospital_load_pct": 41,
+  "blocked_roads": [],
+  "resources_deployed": {
+    "medical_kits": 156,
+    "trucks": 9,
+    "drones": 3,
+    "food_packets": 1189,
+    "water_liters": 15777,
+    "shelter_kits": 21,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 37,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 0.47,
+      "rainfall_mm_24h": 125,
+      "inland_or_coastal": "inland"
+    }
+  },
+  "notes": "Low inland flood"
+}

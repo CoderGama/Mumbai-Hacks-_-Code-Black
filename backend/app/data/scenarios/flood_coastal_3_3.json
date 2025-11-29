@@ -1,0 +1,48 @@
+{
+  "id": "flood_coastal_3_3",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 23351,
+  "zones_affected": [
+    "West",
+    "Central",
+    "South",
+    "East"
+  ],
+  "zones_impacted": [
+    "West",
+    "Central",
+    "South",
+    "East"
+  ],
+  "hospital_load": 0.7,
+  "hospital_load_pct": 70,
+  "blocked_roads": [
+    "Velachery Road",
+    "Mount Road",
+    "OMR"
+  ],
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 1.55,
+      "rainfall_mm_24h": 242,
+      "inland_or_coastal": "coastal"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 1933,
+    "boats": 11,
+    "trucks": 16,
+    "drones": 6,
+    "helicopters": 0,
+    "food_packets": 4670,
+    "water_liters": 65372,
+    "shelter_kits": 227
+  },
+  "outcome": "successful",
+  "response_time_min": 52,
+  "notes": "High coastal flood scenario"
+}

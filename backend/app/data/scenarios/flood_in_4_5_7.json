@@ -1,0 +1,50 @@
+{
+  "id": "flood_in_4_5_7",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 27084,
+  "zones_affected": [
+    "North",
+    "East",
+    "Central",
+    "West"
+  ],
+  "zones_impacted": [
+    "North",
+    "East",
+    "Central",
+    "West"
+  ],
+  "hospital_load": 0.95,
+  "hospital_load_pct": 95,
+  "blocked_roads": [
+    "OMR",
+    "Mount Road",
+    "Marina",
+    "Anna Salai",
+    "GST Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 3759,
+    "trucks": 15,
+    "drones": 6,
+    "food_packets": 5449,
+    "water_liters": 77862,
+    "shelter_kits": 412,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 74,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 0.47,
+      "rainfall_mm_24h": 117,
+      "inland_or_coastal": "inland"
+    }
+  },
+  "notes": "Critical inland flood"
+}

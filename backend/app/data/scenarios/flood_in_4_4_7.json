@@ -1,0 +1,46 @@
+{
+  "id": "flood_in_4_4_7",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 16001,
+  "zones_affected": [
+    "East",
+    "Central",
+    "North",
+    "South"
+  ],
+  "zones_impacted": [
+    "East",
+    "Central",
+    "North",
+    "South"
+  ],
+  "hospital_load": 0.87,
+  "hospital_load_pct": 87,
+  "blocked_roads": [
+    "Anna Salai"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1924,
+    "trucks": 11,
+    "drones": 5,
+    "food_packets": 3037,
+    "water_liters": 52785,
+    "shelter_kits": 221,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 59,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 0.5,
+      "rainfall_mm_24h": 129,
+      "inland_or_coastal": "inland"
+    }
+  },
+  "notes": "Very High inland flood"
+}

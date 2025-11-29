@@ -1,0 +1,40 @@
+{
+  "id": "earthquake_m45_1_3",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 1,
+  "severity_level": 1,
+  "severity_label": "Low",
+  "population_affected": 5689,
+  "zones_affected": [
+    "East",
+    "West"
+  ],
+  "zones_impacted": [
+    "East",
+    "West"
+  ],
+  "hospital_load": 0.37,
+  "hospital_load_pct": 37,
+  "blocked_roads": [],
+  "resources_deployed": {
+    "medical_kits": 139,
+    "trucks": 10,
+    "drones": 5,
+    "food_packets": 1052,
+    "water_liters": 16313,
+    "shelter_kits": 20,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 27,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 4.6,
+      "epicenter_distance_km": 66,
+      "building_collapse_ratio": 0.05
+    }
+  },
+  "notes": "Low earthquake M4.5"
+}

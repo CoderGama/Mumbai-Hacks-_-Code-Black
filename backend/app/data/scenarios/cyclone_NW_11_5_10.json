@@ -1,0 +1,49 @@
+{
+  "id": "cyclone_NW_11_5_10",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 19086,
+  "zones_affected": [
+    "South",
+    "East",
+    "Central",
+    "North",
+    "West"
+  ],
+  "zones_impacted": [
+    "South",
+    "East",
+    "Central",
+    "North",
+    "West"
+  ],
+  "hospital_load": 0.94,
+  "hospital_load_pct": 94,
+  "blocked_roads": [
+    "Velachery Road",
+    "Marina"
+  ],
+  "resources_deployed": {
+    "medical_kits": 2562,
+    "trucks": 15,
+    "drones": 5,
+    "food_packets": 3656,
+    "water_liters": 51699,
+    "shelter_kits": 340,
+    "boats": 11,
+    "helicopters": 3
+  },
+  "outcome": "successful",
+  "response_time_min": 70,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 121,
+      "cyclone_translation_speed_kmph": 24,
+      "cyclone_direction": "NW"
+    }
+  },
+  "notes": "Critical cyclone moving NW"
+}

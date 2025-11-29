@@ -1,0 +1,42 @@
+{
+  "id": "flood_in_2_3_6",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 8298,
+  "zones_affected": [
+    "South",
+    "East"
+  ],
+  "zones_impacted": [
+    "South",
+    "East"
+  ],
+  "hospital_load": 0.65,
+  "hospital_load_pct": 65,
+  "blocked_roads": [
+    "GST Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 604,
+    "trucks": 7,
+    "drones": 2,
+    "food_packets": 1639,
+    "water_liters": 27458,
+    "shelter_kits": 78,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 53,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 0.19,
+      "rainfall_mm_24h": 49,
+      "inland_or_coastal": "inland"
+    }
+  },
+  "notes": "High inland flood"
+}

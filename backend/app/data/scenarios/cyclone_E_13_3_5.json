@@ -1,0 +1,43 @@
+{
+  "id": "cyclone_E_13_3_5",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 12809,
+  "zones_affected": [
+    "West",
+    "Central"
+  ],
+  "zones_impacted": [
+    "West",
+    "Central"
+  ],
+  "hospital_load": 0.74,
+  "hospital_load_pct": 74,
+  "blocked_roads": [
+    "Velachery Road",
+    "Marina"
+  ],
+  "resources_deployed": {
+    "medical_kits": 938,
+    "trucks": 8,
+    "drones": 4,
+    "food_packets": 2786,
+    "water_liters": 38877,
+    "shelter_kits": 142,
+    "boats": 7,
+    "helicopters": 3
+  },
+  "outcome": "successful",
+  "response_time_min": 42,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 128,
+      "cyclone_translation_speed_kmph": 25,
+      "cyclone_direction": "E"
+    }
+  },
+  "notes": "High cyclone moving E"
+}

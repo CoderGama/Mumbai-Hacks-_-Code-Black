@@ -1,0 +1,43 @@
+{
+  "id": "cyclone_E_18_2_6",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 8208,
+  "zones_affected": [
+    "Central",
+    "North"
+  ],
+  "zones_impacted": [
+    "Central",
+    "North"
+  ],
+  "hospital_load": 0.53,
+  "hospital_load_pct": 53,
+  "blocked_roads": [
+    "Marina",
+    "Mount Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 457,
+    "trucks": 6,
+    "drones": 2,
+    "food_packets": 1529,
+    "water_liters": 25221,
+    "shelter_kits": 50,
+    "boats": 5,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 50,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 183,
+      "cyclone_translation_speed_kmph": 25,
+      "cyclone_direction": "E"
+    }
+  },
+  "notes": "Moderate cyclone moving E"
+}

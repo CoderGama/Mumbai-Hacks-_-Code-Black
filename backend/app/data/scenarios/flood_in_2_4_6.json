@@ -1,0 +1,43 @@
+{
+  "id": "flood_in_2_4_6",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 16935,
+  "zones_affected": [
+    "East",
+    "West"
+  ],
+  "zones_impacted": [
+    "East",
+    "West"
+  ],
+  "hospital_load": 0.78,
+  "hospital_load_pct": 78,
+  "blocked_roads": [
+    "GST Road",
+    "Velachery Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1687,
+    "trucks": 10,
+    "drones": 4,
+    "food_packets": 3526,
+    "water_liters": 53138,
+    "shelter_kits": 223,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 58,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 0.17,
+      "rainfall_mm_24h": 51,
+      "inland_or_coastal": "inland"
+    }
+  },
+  "notes": "Very High inland flood"
+}

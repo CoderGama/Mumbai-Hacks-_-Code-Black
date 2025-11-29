@@ -1,0 +1,31 @@
+{
+  "id": "chennai_heatwave_1",
+  "disaster_type": "heatwave",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 15000,
+  "zones_affected": ["Central", "North"],
+  "zones_impacted": ["Central", "North"],
+  "hospital_load": 0.65,
+  "hospital_load_pct": 65,
+  "blocked_roads": [],
+  "disaster_specific": {
+    "heatwave": {
+      "max_temp_c": 48,
+      "humidity_pct": 25,
+      "duration_days": 5
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 1000,
+    "boats": 0,
+    "trucks": 8,
+    "drones": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 30,
+  "notes": "Extended heatwave with extreme temperatures"
+}
+

@@ -1,0 +1,45 @@
+{
+  "id": "cyclone_SE_7_3_7",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 9975,
+  "zones_affected": [
+    "North",
+    "Central",
+    "South"
+  ],
+  "zones_impacted": [
+    "North",
+    "Central",
+    "South"
+  ],
+  "hospital_load": 0.74,
+  "hospital_load_pct": 74,
+  "blocked_roads": [
+    "GST Road",
+    "Mount Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 836,
+    "trucks": 9,
+    "drones": 3,
+    "food_packets": 2088,
+    "water_liters": 32359,
+    "shelter_kits": 92,
+    "boats": 8,
+    "helicopters": 1
+  },
+  "outcome": "successful",
+  "response_time_min": 55,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 73,
+      "cyclone_translation_speed_kmph": 13,
+      "cyclone_direction": "SE"
+    }
+  },
+  "notes": "High cyclone moving SE"
+}

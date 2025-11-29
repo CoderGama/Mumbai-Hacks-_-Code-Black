@@ -10,7 +10,7 @@ import random
 
 from .models import (
     LoginRequest, SignupRequest, UserResponse,
-    ScenarioRequest, DispatchRequest, DecisionActionRequest,
+    ScenarioRequest, ScenarioInput, DispatchRequest, DecisionActionRequest,
     ZoneResponse, RouteResponse, InventoryResponse, 
     DecisionResponse, AgentResponse, ActivityLog
 )
@@ -248,35 +248,76 @@ async def get_activity_logs(limit: int = 20):
 
 # ============== Agent Endpoints ==============
 
+def convert_to_scenario_input(data) -> ScenarioInput:
+    """Convert legacy ScenarioRequest or dict to ScenarioInput"""
+    if isinstance(data, ScenarioInput):
+        return data
+    elif isinstance(data, ScenarioRequest):
+        # Convert legacy format
+        severity_labels = {1: "Low", 2: "Moderate", 3: "High", 4: "Very High", 5: "Critical"}
+        return ScenarioInput(
+            city="Chennai",
+            disaster_type=data.disaster_type,
+            severity_level=data.severity,
+            severity_label=severity_labels.get(data.severity, "Moderate"),
+            population_affected=data.population_affected,
+            zones_impacted=data.zones_affected,
+            hospital_load_pct=data.hospital_load if data.hospital_load > 1 else data.hospital_load * 100,
+            blocked_roads=data.blocked_roads or []
+        )
+    else:
+        # Assume it's a dict from frontend
+        if "severity_level" in data:
+            return ScenarioInput(**data)
+        else:
+            # Legacy dict format
+            severity_labels = {1: "Low", 2: "Moderate", 3: "High", 4: "Very High", 5: "Critical"}
+            return ScenarioInput(
+                city=data.get("city", "Chennai"),
+                disaster_type=data["disaster_type"],
+                severity_level=data.get("severity_level", data.get("severity", 3)),
+                severity_label=data.get("severity_label", severity_labels.get(data.get("severity", 3), "Moderate")),
+                population_affected=data["population_affected"],
+                zones_impacted=data.get("zones_impacted", data.get("zones_affected", [])),
+                hospital_load_pct=data.get("hospital_load_pct", data.get("hospital_load", 0)),
+                blocked_roads=data.get("blocked_roads", []),
+                available_resources=data.get("available_resources", {}),
+                disaster_specific=data.get("disaster_specific"),
+                notes=data.get("notes", "")
+            )
+
 @app.post("/api/agent/run", response_model=AgentResponse)
-async def run_agent(request: ScenarioRequest):
+async def run_agent(request: ScenarioInput | ScenarioRequest):
     """Main agent endpoint - processes scenario and returns decision"""
+    
+    # Convert to ScenarioInput format
+    scenario_input = convert_to_scenario_input(request)
     
     add_activity_log(
         "scenario",
-        f"New {request.disaster_type} scenario submitted",
+        f"New {scenario_input.disaster_type} scenario submitted",
         {
-            "severity": request.severity,
-            "population": request.population_affected,
-            "zones": request.zones_affected
+            "severity": scenario_input.severity_level,
+            "population": scenario_input.population_affected,
+            "zones": scenario_input.zones_impacted
         }
     )
     
-    # Run the agent
-    decision = agent.run(request)
+    # Run the agent with new format
+    decision = agent.run_from_input(scenario_input)
     active_decisions.insert(0, decision)
     
     # Update active zones based on decision
-    for zone_name in request.zones_affected:
+    for zone_name in scenario_input.zones_impacted:
         existing = next((z for z in active_zones if zone_name in z.name), None)
         if not existing:
             severity_map = {1: "low", 2: "moderate", 3: "moderate", 4: "high", 5: "critical"}
             new_zone = ZoneResponse(
                 id=f"zone_{uuid.uuid4().hex[:6]}",
                 name=f"{zone_name} Zone",
-                disaster_type=request.disaster_type,
-                severity=severity_map.get(request.severity, "moderate"),
-                population_affected=request.population_affected // len(request.zones_affected),
+                disaster_type=scenario_input.disaster_type,
+                severity=severity_map.get(scenario_input.severity_level, "moderate"),
+                population_affected=scenario_input.population_affected // len(scenario_input.zones_impacted),
                 supply_coverage={
                     "food": random.randint(40, 80),
                     "water": random.randint(40, 80),
@@ -318,7 +359,7 @@ async def run_agent(request: ScenarioRequest):
         "active_disasters": len(active_zones),
         "affected_population": total_population,
         "active_routes": len(active_routes),
-        "new_zones": request.zones_affected,
+        "new_zones": scenario_input.zones_impacted,
         "risk_level": decision.risk_level
     }
     
@@ -505,19 +546,6 @@ async def get_scenario_presets():
             }
         },
         {
-            "id": "preposition",
-            "name": "Pre-position Supplies",
-            "icon": "📦",
-            "config": {
-                "disaster_type": "cyclone",
-                "severity": 3,
-                "population_affected": 50000,
-                "zones_affected": ["East", "South"],
-                "hospital_load": 50,
-                "blocked_roads": []
-            }
-        },
-        {
             "id": "cyclone_alert",
             "name": "Cyclone Alert",
             "icon": "🌀",
@@ -542,8 +570,60 @@ async def get_scenario_presets():
                 "hospital_load": 80,
                 "blocked_roads": []
             }
+        },
+        {
+            "id": "earthquake",
+            "name": "Earthquake",
+            "icon": "🌍",
+            "config": {
+                "disaster_type": "earthquake",
+                "severity": 5,
+                "population_affected": 45000,
+                "zones_affected": ["Central", "West", "South"],
+                "hospital_load": 92,
+                "blocked_roads": ["Anna_Salai", "Mount_Road"]
+            }
         }
     ]
+
+# ============== ML Model Endpoints ==============
+
+@app.post("/api/ml/train")
+async def train_ml_models():
+    """Train ML models from historical scenarios"""
+    try:
+        from .ml_models import train_models
+        results = train_models()
+        return {
+            "success": True,
+            "results": results,
+            "message": "Models trained successfully"
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e),
+            "message": "Model training failed"
+        }
+
+@app.get("/api/ml/interpretability/{decision_id}")
+async def get_ml_interpretability(decision_id: str):
+    """Get ML model feature importance for a decision"""
+    decision = next((d for d in active_decisions if d.id == decision_id), None)
+    if not decision:
+        raise HTTPException(status_code=404, detail="Decision not found")
+    
+    if decision.ml_interpretability:
+        return {
+            "decision_id": decision_id,
+            "interpretability": decision.ml_interpretability
+        }
+    else:
+        return {
+            "decision_id": decision_id,
+            "interpretability": None,
+            "message": "No ML interpretability data available (rule-based decision)"
+        }
 
 # Health check
 @app.get("/health")

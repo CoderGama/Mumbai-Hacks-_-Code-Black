@@ -1,0 +1,40 @@
+{
+  "id": "flood_co_10_1_3",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 1,
+  "severity_level": 1,
+  "severity_label": "Low",
+  "population_affected": 4663,
+  "zones_affected": [
+    "North",
+    "South"
+  ],
+  "zones_impacted": [
+    "North",
+    "South"
+  ],
+  "hospital_load": 0.35,
+  "hospital_load_pct": 35,
+  "blocked_roads": [],
+  "resources_deployed": {
+    "medical_kits": 137,
+    "trucks": 4,
+    "drones": 3,
+    "food_packets": 958,
+    "water_liters": 14565,
+    "shelter_kits": 20,
+    "boats": 6,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 40,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 1.03,
+      "rainfall_mm_24h": 273,
+      "inland_or_coastal": "coastal"
+    }
+  },
+  "notes": "Low coastal flood"
+}

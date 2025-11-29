@@ -1,0 +1,45 @@
+{
+  "id": "earthquake_m80_3_10",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 10961,
+  "zones_affected": [
+    "East",
+    "Central",
+    "North"
+  ],
+  "zones_impacted": [
+    "East",
+    "Central",
+    "North"
+  ],
+  "hospital_load": 0.67,
+  "hospital_load_pct": 67,
+  "blocked_roads": [
+    "Anna Salai",
+    "OMR"
+  ],
+  "resources_deployed": {
+    "medical_kits": 836,
+    "trucks": 15,
+    "drones": 6,
+    "food_packets": 2099,
+    "water_liters": 36094,
+    "shelter_kits": 103,
+    "boats": 0,
+    "helicopters": 1
+  },
+  "outcome": "successful",
+  "response_time_min": 49,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 8.3,
+      "epicenter_distance_km": 23,
+      "building_collapse_ratio": 0.44
+    }
+  },
+  "notes": "High earthquake M8.0"
+}

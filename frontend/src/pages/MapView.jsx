@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Polyline, Circle, useMap } from 'react-leaflet';
 import { motion } from 'framer-motion';
-import { Warehouse, Truck, Navigation, AlertTriangle, Layers, Ship, Plane, RefreshCw } from 'lucide-react';
+import { Warehouse, Truck, Navigation, AlertTriangle, Layers, Ship, Plane, RefreshCw, Brain } from 'lucide-react';
 import { api } from '../services/api';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -108,18 +108,23 @@ const createArrowIcon = (color, rotation) => {
   });
 };
 
-// Map center adjuster
+// Map center adjuster - only fits bounds on INITIAL load, not on every data refresh
 function MapController({ center, mapData }) {
   const map = useMap();
+  const hasInitialized = useRef(false);
   
+  // Only fly to center on very first render (not on data changes)
   useEffect(() => {
-    if (center) {
-      map.flyTo(center, 12, { duration: 1 });
+    if (center && !hasInitialized.current) {
+      // Don't do anything here - let fitBounds handle initial positioning
     }
   }, [center, map]);
   
-  // Auto-fit bounds when data changes
+  // Auto-fit bounds ONLY on initial load
   useEffect(() => {
+    // Skip if already initialized
+    if (hasInitialized.current) return;
+    
     if (mapData?.routes?.length > 0 || mapData?.zones?.length > 0) {
       const bounds = [];
       mapData.routes?.forEach(route => {
@@ -134,6 +139,7 @@ function MapController({ center, mapData }) {
       
       if (bounds.length > 1) {
         map.fitBounds(bounds, { padding: [50, 50], maxZoom: 13 });
+        hasInitialized.current = true; // Mark as initialized - won't reset view again
       }
     }
   }, [mapData, map]);
@@ -202,7 +208,8 @@ export default function MapView() {
   const [showRoutes, setShowRoutes] = useState(true);
   const [showVehicles, setShowVehicles] = useState(true);
   const [showArrows, setShowArrows] = useState(true);
-  const { timestamp, refresh } = useSync();
+  const [showAIRoute, setShowAIRoute] = useState(true);
+  const { mapTimestamp, refreshMap, highlightedRoute } = useSync();
 
   // Chennai center coordinates
   const defaultCenter = [13.0827, 80.2707];
@@ -239,11 +246,11 @@ export default function MapView() {
     }
   };
 
-  // Unified polling: refetch on every SyncContext timestamp
+  // Fetch on every mapTimestamp change (controlled by SyncContext based on settings)
   useEffect(() => {
     fetchMapData();
     // eslint-disable-next-line
-  }, [timestamp]);
+  }, [mapTimestamp]);
 
   const getRouteColor = (status, isAlternative = false) => {
     if (isAlternative) return '#9b59b6'; // Purple for alternative routes
@@ -290,7 +297,7 @@ export default function MapView() {
         <div className="control-group">
           <Layers size={18} />
           <span>Layers</span>
-          <button className="refresh-btn" onClick={refresh} title="Refresh Now">
+          <button className="refresh-btn" onClick={refreshMap} title="Refresh Now">
             <RefreshCw size={14} />
           </button>
         </div>
@@ -338,6 +345,15 @@ export default function MapView() {
           />
           <Navigation size={16} />
           <span>Direction</span>
+        </label>
+        <label className="control-item">
+          <input 
+            type="checkbox" 
+            checked={showAIRoute} 
+            onChange={(e) => setShowAIRoute(e.target.checked)} 
+          />
+          <Brain size={16} />
+          <span>AI Route</span>
         </label>
       </div>
 
@@ -546,6 +562,18 @@ export default function MapView() {
             </React.Fragment>
           )
         ))}
+
+        {/* AI Route (Blue Polyline) */}
+        {showAIRoute && highlightedRoute && highlightedRoute.length > 1 && (
+          <Polyline
+            positions={highlightedRoute}
+            pathOptions={{
+              color: '#0066ff',
+              weight: 6,
+              opacity: 0.9,
+            }}
+          />
+        )}
 
         {/* Vehicle markers with ETA labels */}
         {showVehicles && mapData?.routes?.map((route) => {

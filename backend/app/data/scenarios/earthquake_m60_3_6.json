@@ -1,0 +1,46 @@
+{
+  "id": "earthquake_m60_3_6",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 10146,
+  "zones_affected": [
+    "East",
+    "West",
+    "North"
+  ],
+  "zones_impacted": [
+    "East",
+    "West",
+    "North"
+  ],
+  "hospital_load": 0.73,
+  "hospital_load_pct": 73,
+  "blocked_roads": [
+    "GST Road",
+    "Velachery Road",
+    "Mount Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 776,
+    "trucks": 12,
+    "drones": 8,
+    "food_packets": 2133,
+    "water_liters": 30775,
+    "shelter_kits": 111,
+    "boats": 0,
+    "helicopters": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 48,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 6.2,
+      "epicenter_distance_km": 40,
+      "building_collapse_ratio": 0.17
+    }
+  },
+  "notes": "High earthquake M6.0"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "cyclone_NE_10_3_2",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 10114,
+  "zones_affected": [
+    "North",
+    "East"
+  ],
+  "zones_impacted": [
+    "North",
+    "East"
+  ],
+  "hospital_load": 0.7,
+  "hospital_load_pct": 70,
+  "blocked_roads": [
+    "Anna Salai"
+  ],
+  "resources_deployed": {
+    "medical_kits": 846,
+    "trucks": 7,
+    "drones": 2,
+    "food_packets": 1913,
+    "water_liters": 31523,
+    "shelter_kits": 97,
+    "boats": 4,
+    "helicopters": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 42,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 98,
+      "cyclone_translation_speed_kmph": 19,
+      "cyclone_direction": "NE"
+    }
+  },
+  "notes": "High cyclone moving NE"
+}

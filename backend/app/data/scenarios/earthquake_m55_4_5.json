@@ -1,0 +1,48 @@
+{
+  "id": "earthquake_m55_4_5",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 17145,
+  "zones_affected": [
+    "East",
+    "Central",
+    "North",
+    "West"
+  ],
+  "zones_impacted": [
+    "East",
+    "Central",
+    "North",
+    "West"
+  ],
+  "hospital_load": 0.77,
+  "hospital_load_pct": 77,
+  "blocked_roads": [
+    "OMR",
+    "Mount Road",
+    "ECR"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1883,
+    "trucks": 18,
+    "drones": 11,
+    "food_packets": 3186,
+    "water_liters": 58017,
+    "shelter_kits": 208,
+    "boats": 0,
+    "helicopters": 4
+  },
+  "outcome": "successful",
+  "response_time_min": 57,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 5.6,
+      "epicenter_distance_km": 39,
+      "building_collapse_ratio": 0.14
+    }
+  },
+  "notes": "Very High earthquake M5.5"
+}

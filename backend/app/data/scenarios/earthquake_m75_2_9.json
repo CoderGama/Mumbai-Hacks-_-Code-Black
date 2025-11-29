@@ -1,0 +1,43 @@
+{
+  "id": "earthquake_m75_2_9",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 8002,
+  "zones_affected": [
+    "North",
+    "West"
+  ],
+  "zones_impacted": [
+    "North",
+    "West"
+  ],
+  "hospital_load": 0.51,
+  "hospital_load_pct": 51,
+  "blocked_roads": [
+    "Marina",
+    "Velachery Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 437,
+    "trucks": 11,
+    "drones": 4,
+    "food_packets": 1512,
+    "water_liters": 26249,
+    "shelter_kits": 59,
+    "boats": 0,
+    "helicopters": 5
+  },
+  "outcome": "successful",
+  "response_time_min": 48,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 7.7,
+      "epicenter_distance_km": 30,
+      "building_collapse_ratio": 0.37
+    }
+  },
+  "notes": "Moderate earthquake M7.5"
+}

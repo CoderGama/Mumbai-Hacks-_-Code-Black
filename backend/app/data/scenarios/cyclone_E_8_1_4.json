@@ -1,0 +1,38 @@
+{
+  "id": "cyclone_E_8_1_4",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 1,
+  "severity_level": 1,
+  "severity_label": "Low",
+  "population_affected": 6413,
+  "zones_affected": [
+    "West"
+  ],
+  "zones_impacted": [
+    "West"
+  ],
+  "hospital_load": 0.44,
+  "hospital_load_pct": 44,
+  "blocked_roads": [],
+  "resources_deployed": {
+    "medical_kits": 182,
+    "trucks": 5,
+    "drones": 1,
+    "food_packets": 1384,
+    "water_liters": 19287,
+    "shelter_kits": 20,
+    "boats": 1,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 25,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 84,
+      "cyclone_translation_speed_kmph": 17,
+      "cyclone_direction": "E"
+    }
+  },
+  "notes": "Low cyclone moving E"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "earthquake_m65_2_7",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 6428,
+  "zones_affected": [
+    "West",
+    "North",
+    "East"
+  ],
+  "zones_impacted": [
+    "West",
+    "North",
+    "East"
+  ],
+  "hospital_load": 0.52,
+  "hospital_load_pct": 52,
+  "blocked_roads": [],
+  "resources_deployed": {
+    "medical_kits": 363,
+    "trucks": 11,
+    "drones": 9,
+    "food_packets": 1167,
+    "water_liters": 19165,
+    "shelter_kits": 46,
+    "boats": 0,
+    "helicopters": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 39,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 6.5,
+      "epicenter_distance_km": 34,
+      "building_collapse_ratio": 0.24
+    }
+  },
+  "notes": "Moderate earthquake M6.5"
+}

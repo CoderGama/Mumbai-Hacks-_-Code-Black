@@ -1,0 +1,48 @@
+{
+  "id": "earthquake_m40_4_2",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 17366,
+  "zones_affected": [
+    "South",
+    "West",
+    "East",
+    "North"
+  ],
+  "zones_impacted": [
+    "South",
+    "West",
+    "East",
+    "North"
+  ],
+  "hospital_load": 0.86,
+  "hospital_load_pct": 86,
+  "blocked_roads": [
+    "GST Road",
+    "ECR",
+    "Anna Salai"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1903,
+    "trucks": 18,
+    "drones": 9,
+    "food_packets": 3332,
+    "water_liters": 54336,
+    "shelter_kits": 216,
+    "boats": 0,
+    "helicopters": 5
+  },
+  "outcome": "successful",
+  "response_time_min": 56,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 3.9,
+      "epicenter_distance_km": 62,
+      "building_collapse_ratio": 0.02
+    }
+  },
+  "notes": "Very High earthquake M4.0"
+}

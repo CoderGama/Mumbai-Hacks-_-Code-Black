@@ -22,7 +22,7 @@ export default function Dashboard() {
   const [activityLogs, setActivityLogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [lastDecision, setLastDecision] = useState(null);
-  const { timestamp } = useSync();
+  const { dashboardTimestamp, updateLastDecision, refreshDashboard } = useSync();
 
   const fetchData = async () => {
     try {
@@ -45,14 +45,18 @@ export default function Dashboard() {
     }
   };
 
-  // Unified polling: fetch on every context timestamp
+  // Fetch on every dashboardTimestamp change (controlled by SyncContext based on settings)
   useEffect(() => {
     fetchData();
     // eslint-disable-next-line
-  }, [timestamp]);
+  }, [dashboardTimestamp]);
 
   const handleAgentResult = (result) => {
     setLastDecision(result.decision);
+    // Update SyncContext with decision (for map route highlighting)
+    if (updateLastDecision) {
+      updateLastDecision(result.decision);
+    }
     fetchData(); // Fetch immediately on new agent run
   };
 

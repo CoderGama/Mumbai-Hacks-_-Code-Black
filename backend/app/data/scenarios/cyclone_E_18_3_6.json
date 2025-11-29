@@ -1,0 +1,48 @@
+{
+  "id": "cyclone_E_18_3_6",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 8614,
+  "zones_affected": [
+    "West",
+    "North",
+    "South",
+    "Central"
+  ],
+  "zones_impacted": [
+    "West",
+    "North",
+    "South",
+    "Central"
+  ],
+  "hospital_load": 0.7,
+  "hospital_load_pct": 70,
+  "blocked_roads": [
+    "GST Road",
+    "Velachery Road",
+    "Mount Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 782,
+    "trucks": 13,
+    "drones": 5,
+    "food_packets": 1608,
+    "water_liters": 28283,
+    "shelter_kits": 94,
+    "boats": 7,
+    "helicopters": 4
+  },
+  "outcome": "successful",
+  "response_time_min": 42,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 172,
+      "cyclone_translation_speed_kmph": 32,
+      "cyclone_direction": "E"
+    }
+  },
+  "notes": "High cyclone moving E"
+}

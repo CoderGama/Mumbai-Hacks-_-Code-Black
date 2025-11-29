@@ -1,0 +1,48 @@
+{
+  "id": "earthquake_m65_3_7",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 12911,
+  "zones_affected": [
+    "South",
+    "East",
+    "North",
+    "Central"
+  ],
+  "zones_impacted": [
+    "South",
+    "East",
+    "North",
+    "Central"
+  ],
+  "hospital_load": 0.63,
+  "hospital_load_pct": 63,
+  "blocked_roads": [
+    "OMR",
+    "Velachery Road",
+    "Marina"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1065,
+    "trucks": 15,
+    "drones": 9,
+    "food_packets": 2546,
+    "water_liters": 36662,
+    "shelter_kits": 117,
+    "boats": 0,
+    "helicopters": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 55,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 6.7,
+      "epicenter_distance_km": 20,
+      "building_collapse_ratio": 0.22
+    }
+  },
+  "notes": "High earthquake M6.5"
+}

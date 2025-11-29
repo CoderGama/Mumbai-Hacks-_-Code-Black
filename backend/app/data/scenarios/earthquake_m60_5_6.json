@@ -1,0 +1,45 @@
+{
+  "id": "earthquake_m60_5_6",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 19284,
+  "zones_affected": [
+    "East",
+    "Central",
+    "West"
+  ],
+  "zones_impacted": [
+    "East",
+    "Central",
+    "West"
+  ],
+  "hospital_load": 0.99,
+  "hospital_load_pct": 99,
+  "blocked_roads": [
+    "ECR",
+    "Velachery Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 2483,
+    "trucks": 16,
+    "drones": 9,
+    "food_packets": 3970,
+    "water_liters": 56901,
+    "shelter_kits": 326,
+    "boats": 0,
+    "helicopters": 1
+  },
+  "outcome": "successful",
+  "response_time_min": 72,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 6.2,
+      "epicenter_distance_km": 33,
+      "building_collapse_ratio": 0.18
+    }
+  },
+  "notes": "Critical earthquake M6.0"
+}

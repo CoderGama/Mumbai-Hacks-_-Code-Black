@@ -1,0 +1,38 @@
+{
+  "id": "earthquake_m70_1_8",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 1,
+  "severity_level": 1,
+  "severity_label": "Low",
+  "population_affected": 5556,
+  "zones_affected": [
+    "North"
+  ],
+  "zones_impacted": [
+    "North"
+  ],
+  "hospital_load": 0.46,
+  "hospital_load_pct": 46,
+  "blocked_roads": [],
+  "resources_deployed": {
+    "medical_kits": 162,
+    "trucks": 4,
+    "drones": 4,
+    "food_packets": 1176,
+    "water_liters": 17956,
+    "shelter_kits": 21,
+    "boats": 0,
+    "helicopters": 3
+  },
+  "outcome": "successful",
+  "response_time_min": 30,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 7.2,
+      "epicenter_distance_km": 13,
+      "building_collapse_ratio": 0.29
+    }
+  },
+  "notes": "Low earthquake M7.0"
+}

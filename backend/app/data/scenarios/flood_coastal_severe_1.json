@@ -1,0 +1,34 @@
+{
+  "id": "flood_coastal_severe_1",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 35000,
+  "zones_affected": ["East", "South", "Central"],
+  "zones_impacted": ["East", "South", "Central"],
+  "hospital_load": 0.82,
+  "hospital_load_pct": 82,
+  "blocked_roads": ["OMR", "ECR", "Marina"],
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 1.5,
+      "rainfall_mm_24h": 320,
+      "inland_or_coastal": "coastal"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 2800,
+    "boats": 12,
+    "trucks": 15,
+    "drones": 6,
+    "food_packets": 7000,
+    "water_liters": 105000,
+    "shelter_kits": 350
+  },
+  "outcome": "successful",
+  "response_time_min": 55,
+  "notes": "Severe coastal flooding with storm surge"
+}
+

@@ -1,0 +1,43 @@
+{
+  "id": "earthquake_near_3_1",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 53522,
+  "zones_affected": [
+    "South",
+    "Central"
+  ],
+  "zones_impacted": [
+    "South",
+    "Central"
+  ],
+  "hospital_load": 0.73,
+  "hospital_load_pct": 73,
+  "blocked_roads": [
+    "Anna Salai",
+    "ECR"
+  ],
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 6.1,
+      "epicenter_distance_km": 23,
+      "building_collapse_ratio": 0.13
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 4790,
+    "boats": 0,
+    "trucks": 12,
+    "drones": 9,
+    "helicopters": 5,
+    "food_packets": 10457,
+    "water_liters": 166817,
+    "shelter_kits": 942
+  },
+  "outcome": "successful",
+  "response_time_min": 78,
+  "notes": "High earthquake, epicenter 23km away"
+}

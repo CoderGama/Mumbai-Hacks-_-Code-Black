@@ -1,0 +1,48 @@
+{
+  "id": "flood_inland_4_2",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 49650,
+  "zones_affected": [
+    "East",
+    "West",
+    "Central",
+    "North"
+  ],
+  "zones_impacted": [
+    "East",
+    "West",
+    "Central",
+    "North"
+  ],
+  "hospital_load": 0.84,
+  "hospital_load_pct": 84,
+  "blocked_roads": [
+    "OMR",
+    "Mount Road",
+    "GST Road"
+  ],
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 1.83,
+      "rainfall_mm_24h": 303,
+      "inland_or_coastal": "inland"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 5313,
+    "boats": 11,
+    "trucks": 15,
+    "drones": 4,
+    "helicopters": 1,
+    "food_packets": 10032,
+    "water_liters": 147558,
+    "shelter_kits": 476
+  },
+  "outcome": "successful",
+  "response_time_min": 57,
+  "notes": "Very High inland flood scenario"
+}

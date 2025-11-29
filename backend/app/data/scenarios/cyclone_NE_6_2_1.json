@@ -1,0 +1,40 @@
+{
+  "id": "cyclone_NE_6_2_1",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 9349,
+  "zones_affected": [
+    "South"
+  ],
+  "zones_impacted": [
+    "South"
+  ],
+  "hospital_load": 0.54,
+  "hospital_load_pct": 54,
+  "blocked_roads": [
+    "Velachery Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 505,
+    "trucks": 4,
+    "drones": 2,
+    "food_packets": 1960,
+    "water_liters": 29583,
+    "shelter_kits": 56,
+    "boats": 5,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 43,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 57,
+      "cyclone_translation_speed_kmph": 10,
+      "cyclone_direction": "NE"
+    }
+  },
+  "notes": "Moderate cyclone moving NE"
+}

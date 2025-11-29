@@ -1,0 +1,47 @@
+{
+  "id": "cyclone_NE_10_5_2",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 23988,
+  "zones_affected": [
+    "East",
+    "North",
+    "West",
+    "Central"
+  ],
+  "zones_impacted": [
+    "East",
+    "North",
+    "West",
+    "Central"
+  ],
+  "hospital_load": 0.95,
+  "hospital_load_pct": 95,
+  "blocked_roads": [
+    "ECR",
+    "Anna Salai"
+  ],
+  "resources_deployed": {
+    "medical_kits": 3164,
+    "trucks": 13,
+    "drones": 5,
+    "food_packets": 5240,
+    "water_liters": 76064,
+    "shelter_kits": 430,
+    "boats": 11,
+    "helicopters": 1
+  },
+  "outcome": "successful",
+  "response_time_min": 62,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 103,
+      "cyclone_translation_speed_kmph": 16,
+      "cyclone_direction": "NE"
+    }
+  },
+  "notes": "Critical cyclone moving NE"
+}

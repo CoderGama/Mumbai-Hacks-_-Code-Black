@@ -1,0 +1,45 @@
+{
+  "id": "cyclone_N_9_4_9",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 12955,
+  "zones_affected": [
+    "Central",
+    "South",
+    "West"
+  ],
+  "zones_impacted": [
+    "Central",
+    "South",
+    "West"
+  ],
+  "hospital_load": 0.81,
+  "hospital_load_pct": 81,
+  "blocked_roads": [
+    "Mount Road",
+    "ECR"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1552,
+    "trucks": 10,
+    "drones": 3,
+    "food_packets": 2443,
+    "water_liters": 40592,
+    "shelter_kits": 197,
+    "boats": 9,
+    "helicopters": 1
+  },
+  "outcome": "successful",
+  "response_time_min": 55,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 88,
+      "cyclone_translation_speed_kmph": 19,
+      "cyclone_direction": "N"
+    }
+  },
+  "notes": "Very High cyclone moving N"
+}

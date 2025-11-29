@@ -1,0 +1,40 @@
+{
+  "id": "earthquake_m35_2_1",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 6989,
+  "zones_affected": [
+    "North"
+  ],
+  "zones_impacted": [
+    "North"
+  ],
+  "hospital_load": 0.51,
+  "hospital_load_pct": 51,
+  "blocked_roads": [
+    "Marina"
+  ],
+  "resources_deployed": {
+    "medical_kits": 391,
+    "trucks": 8,
+    "drones": 5,
+    "food_packets": 1530,
+    "water_liters": 20358,
+    "shelter_kits": 45,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 33,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 3.8,
+      "epicenter_distance_km": 74,
+      "building_collapse_ratio": 0.05
+    }
+  },
+  "notes": "Moderate earthquake M3.5"
+}

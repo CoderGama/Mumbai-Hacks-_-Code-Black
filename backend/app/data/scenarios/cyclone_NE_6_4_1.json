@@ -1,0 +1,44 @@
+{
+  "id": "cyclone_NE_6_4_1",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 19338,
+  "zones_affected": [
+    "East",
+    "Central"
+  ],
+  "zones_impacted": [
+    "East",
+    "Central"
+  ],
+  "hospital_load": 0.84,
+  "hospital_load_pct": 84,
+  "blocked_roads": [
+    "Marina",
+    "ECR",
+    "Anna Salai"
+  ],
+  "resources_deployed": {
+    "medical_kits": 2316,
+    "trucks": 8,
+    "drones": 3,
+    "food_packets": 4057,
+    "water_liters": 64255,
+    "shelter_kits": 269,
+    "boats": 6,
+    "helicopters": 1
+  },
+  "outcome": "successful",
+  "response_time_min": 55,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 50,
+      "cyclone_translation_speed_kmph": 17,
+      "cyclone_direction": "NE"
+    }
+  },
+  "notes": "Very High cyclone moving NE"
+}

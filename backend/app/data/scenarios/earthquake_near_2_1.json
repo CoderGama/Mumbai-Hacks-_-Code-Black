@@ -1,0 +1,46 @@
+{
+  "id": "earthquake_near_2_1",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 22743,
+  "zones_affected": [
+    "East",
+    "Central",
+    "West"
+  ],
+  "zones_impacted": [
+    "East",
+    "Central",
+    "West"
+  ],
+  "hospital_load": 0.66,
+  "hospital_load_pct": 66,
+  "blocked_roads": [
+    "OMR",
+    "GST Road",
+    "Anna Salai"
+  ],
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 5.1,
+      "epicenter_distance_km": 19,
+      "building_collapse_ratio": 0.09
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 1376,
+    "boats": 0,
+    "trucks": 18,
+    "drones": 11,
+    "helicopters": 0,
+    "food_packets": 5174,
+    "water_liters": 72410,
+    "shelter_kits": 296
+  },
+  "outcome": "successful",
+  "response_time_min": 55,
+  "notes": "Moderate earthquake, epicenter 19km away"
+}

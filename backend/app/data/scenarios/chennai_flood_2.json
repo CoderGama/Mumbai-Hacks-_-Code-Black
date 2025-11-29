@@ -1,0 +1,31 @@
+{
+  "id": "chennai_flood_2",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 25000,
+  "zones_affected": ["East", "South", "Central"],
+  "zones_impacted": ["East", "South", "Central"],
+  "hospital_load": 0.85,
+  "hospital_load_pct": 85,
+  "blocked_roads": ["OMR", "ECR"],
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 1.5,
+      "rainfall_mm_24h": 350,
+      "inland_or_coastal": "coastal"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 2000,
+    "boats": 8,
+    "trucks": 10,
+    "drones": 4
+  },
+  "outcome": "successful",
+  "response_time_min": 60,
+  "notes": "Severe coastal flooding with high water levels"
+}
+

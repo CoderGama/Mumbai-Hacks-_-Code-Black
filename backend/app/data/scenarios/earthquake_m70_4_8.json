@@ -1,0 +1,46 @@
+{
+  "id": "earthquake_m70_4_8",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 12387,
+  "zones_affected": [
+    "South",
+    "North",
+    "West"
+  ],
+  "zones_impacted": [
+    "South",
+    "North",
+    "West"
+  ],
+  "hospital_load": 0.89,
+  "hospital_load_pct": 89,
+  "blocked_roads": [
+    "Marina",
+    "Anna Salai",
+    "Mount Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1365,
+    "trucks": 12,
+    "drones": 7,
+    "food_packets": 2231,
+    "water_liters": 35625,
+    "shelter_kits": 154,
+    "boats": 0,
+    "helicopters": 3
+  },
+  "outcome": "successful",
+  "response_time_min": 68,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 7.0,
+      "epicenter_distance_km": 35,
+      "building_collapse_ratio": 0.32
+    }
+  },
+  "notes": "Very High earthquake M7.0"
+}

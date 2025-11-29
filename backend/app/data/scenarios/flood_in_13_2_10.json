@@ -1,0 +1,41 @@
+{
+  "id": "flood_in_13_2_10",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 8864,
+  "zones_affected": [
+    "North"
+  ],
+  "zones_impacted": [
+    "North"
+  ],
+  "hospital_load": 0.57,
+  "hospital_load_pct": 57,
+  "blocked_roads": [
+    "Velachery Road",
+    "Anna Salai"
+  ],
+  "resources_deployed": {
+    "medical_kits": 451,
+    "trucks": 5,
+    "drones": 1,
+    "food_packets": 1782,
+    "water_liters": 24619,
+    "shelter_kits": 62,
+    "boats": 7,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 46,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 1.44,
+      "rainfall_mm_24h": 334,
+      "inland_or_coastal": "inland"
+    }
+  },
+  "notes": "Moderate inland flood"
+}

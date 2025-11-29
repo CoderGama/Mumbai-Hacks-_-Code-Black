@@ -223,6 +223,7 @@ export default function Settings() {
                 <option value={15}>15 seconds</option>
                 <option value={30}>30 seconds</option>
                 <option value={60}>1 minute</option>
+                <option value={0}>Manual only</option>
               </select>
             </label>
           </div>

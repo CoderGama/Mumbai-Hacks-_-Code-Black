@@ -1,0 +1,45 @@
+{
+  "id": "flood_co_15_3_4",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 8629,
+  "zones_affected": [
+    "Central",
+    "East",
+    "West"
+  ],
+  "zones_impacted": [
+    "Central",
+    "East",
+    "West"
+  ],
+  "hospital_load": 0.7,
+  "hospital_load_pct": 70,
+  "blocked_roads": [
+    "Marina",
+    "Velachery Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 658,
+    "trucks": 8,
+    "drones": 5,
+    "food_packets": 1876,
+    "water_liters": 23982,
+    "shelter_kits": 95,
+    "boats": 9,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 50,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 1.58,
+      "rainfall_mm_24h": 379,
+      "inland_or_coastal": "coastal"
+    }
+  },
+  "notes": "High coastal flood"
+}

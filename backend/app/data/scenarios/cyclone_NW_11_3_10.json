@@ -1,0 +1,42 @@
+{
+  "id": "cyclone_NW_11_3_10",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 8404,
+  "zones_affected": [
+    "South",
+    "Central"
+  ],
+  "zones_impacted": [
+    "South",
+    "Central"
+  ],
+  "hospital_load": 0.68,
+  "hospital_load_pct": 68,
+  "blocked_roads": [
+    "OMR"
+  ],
+  "resources_deployed": {
+    "medical_kits": 653,
+    "trucks": 9,
+    "drones": 2,
+    "food_packets": 1720,
+    "water_liters": 28102,
+    "shelter_kits": 80,
+    "boats": 4,
+    "helicopters": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 49,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 109,
+      "cyclone_translation_speed_kmph": 20,
+      "cyclone_direction": "NW"
+    }
+  },
+  "notes": "High cyclone moving NW"
+}

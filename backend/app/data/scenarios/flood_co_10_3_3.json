@@ -1,0 +1,46 @@
+{
+  "id": "flood_co_10_3_3",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 10577,
+  "zones_affected": [
+    "West",
+    "South",
+    "East"
+  ],
+  "zones_impacted": [
+    "West",
+    "South",
+    "East"
+  ],
+  "hospital_load": 0.74,
+  "hospital_load_pct": 74,
+  "blocked_roads": [
+    "ECR",
+    "Mount Road",
+    "Anna Salai"
+  ],
+  "resources_deployed": {
+    "medical_kits": 844,
+    "trucks": 8,
+    "drones": 4,
+    "food_packets": 1983,
+    "water_liters": 29169,
+    "shelter_kits": 119,
+    "boats": 8,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 44,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 1.02,
+      "rainfall_mm_24h": 276,
+      "inland_or_coastal": "coastal"
+    }
+  },
+  "notes": "High coastal flood"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "heatwave_t42h25_4_3",
+  "disaster_type": "heatwave",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 16175,
+  "zones_affected": [
+    "South",
+    "Central"
+  ],
+  "zones_impacted": [
+    "South",
+    "Central"
+  ],
+  "hospital_load": 0.83,
+  "hospital_load_pct": 83,
+  "blocked_roads": [],
+  "resources_deployed": {
+    "medical_kits": 1725,
+    "trucks": 8,
+    "drones": 3,
+    "food_packets": 3516,
+    "water_liters": 74093,
+    "shelter_kits": 202,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 50,
+  "disaster_specific": {
+    "heatwave": {
+      "max_temp_c": 41,
+      "humidity_pct": 30,
+      "duration_days": 5
+    }
+  },
+  "notes": "Very High heatwave 42\u00b0C"
+}

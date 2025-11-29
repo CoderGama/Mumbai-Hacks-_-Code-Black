@@ -1,0 +1,42 @@
+{
+  "id": "cyclone_NE_15_2_3",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 7216,
+  "zones_affected": [
+    "West",
+    "Central",
+    "East"
+  ],
+  "zones_impacted": [
+    "West",
+    "Central",
+    "East"
+  ],
+  "hospital_load": 0.55,
+  "hospital_load_pct": 55,
+  "blocked_roads": [],
+  "resources_deployed": {
+    "medical_kits": 410,
+    "trucks": 9,
+    "drones": 4,
+    "food_packets": 1448,
+    "water_liters": 20532,
+    "shelter_kits": 53,
+    "boats": 7,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 39,
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 144,
+      "cyclone_translation_speed_kmph": 30,
+      "cyclone_direction": "NE"
+    }
+  },
+  "notes": "Moderate cyclone moving NE"
+}

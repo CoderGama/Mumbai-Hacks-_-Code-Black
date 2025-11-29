@@ -1,0 +1,45 @@
+{
+  "id": "earthquake_m35_4_1",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 15321,
+  "zones_affected": [
+    "Central",
+    "South"
+  ],
+  "zones_impacted": [
+    "Central",
+    "South"
+  ],
+  "hospital_load": 0.88,
+  "hospital_load_pct": 88,
+  "blocked_roads": [
+    "Velachery Road",
+    "OMR",
+    "Anna Salai",
+    "GST Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1654,
+    "trucks": 12,
+    "drones": 5,
+    "food_packets": 3332,
+    "water_liters": 42791,
+    "shelter_kits": 204,
+    "boats": 0,
+    "helicopters": 5
+  },
+  "outcome": "successful",
+  "response_time_min": 57,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 3.6,
+      "epicenter_distance_km": 74,
+      "building_collapse_ratio": 0.04
+    }
+  },
+  "notes": "Very High earthquake M3.5"
+}

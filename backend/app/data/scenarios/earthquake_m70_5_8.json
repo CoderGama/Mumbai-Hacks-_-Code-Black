@@ -1,0 +1,46 @@
+{
+  "id": "earthquake_m70_5_8",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 22666,
+  "zones_affected": [
+    "South",
+    "West",
+    "East"
+  ],
+  "zones_impacted": [
+    "South",
+    "West",
+    "East"
+  ],
+  "hospital_load": 0.99,
+  "hospital_load_pct": 99,
+  "blocked_roads": [
+    "OMR",
+    "ECR",
+    "GST Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 3027,
+    "trucks": 16,
+    "drones": 6,
+    "food_packets": 4814,
+    "water_liters": 71307,
+    "shelter_kits": 403,
+    "boats": 0,
+    "helicopters": 3
+  },
+  "outcome": "successful",
+  "response_time_min": 79,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 7.1,
+      "epicenter_distance_km": 27,
+      "building_collapse_ratio": 0.29
+    }
+  },
+  "notes": "Critical earthquake M7.0"
+}

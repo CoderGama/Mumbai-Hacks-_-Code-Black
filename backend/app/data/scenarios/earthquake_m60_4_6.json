@@ -1,0 +1,46 @@
+{
+  "id": "earthquake_m60_4_6",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 13591,
+  "zones_affected": [
+    "East",
+    "West",
+    "North"
+  ],
+  "zones_impacted": [
+    "East",
+    "West",
+    "North"
+  ],
+  "hospital_load": 0.79,
+  "hospital_load_pct": 79,
+  "blocked_roads": [
+    "Marina",
+    "OMR",
+    "Mount Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1663,
+    "trucks": 13,
+    "drones": 9,
+    "food_packets": 2905,
+    "water_liters": 45627,
+    "shelter_kits": 175,
+    "boats": 0,
+    "helicopters": 4
+  },
+  "outcome": "successful",
+  "response_time_min": 58,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 6.2,
+      "epicenter_distance_km": 32,
+      "building_collapse_ratio": 0.21
+    }
+  },
+  "notes": "Very High earthquake M6.0"
+}

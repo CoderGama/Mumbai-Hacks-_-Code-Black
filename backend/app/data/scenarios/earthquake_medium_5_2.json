@@ -1,0 +1,51 @@
+{
+  "id": "earthquake_medium_5_2",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 106397,
+  "zones_affected": [
+    "East",
+    "Central",
+    "West",
+    "North",
+    "South"
+  ],
+  "zones_impacted": [
+    "East",
+    "Central",
+    "West",
+    "North",
+    "South"
+  ],
+  "hospital_load": 0.99,
+  "hospital_load_pct": 99,
+  "blocked_roads": [
+    "Anna Salai",
+    "Mount Road",
+    "GST Road",
+    "ECR"
+  ],
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 8.5,
+      "epicenter_distance_km": 46,
+      "building_collapse_ratio": 0.28
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 18314,
+    "boats": 0,
+    "trucks": 23,
+    "drones": 16,
+    "helicopters": 4,
+    "food_packets": 21955,
+    "water_liters": 321022,
+    "shelter_kits": 2583
+  },
+  "outcome": "successful",
+  "response_time_min": 113,
+  "notes": "Critical earthquake, epicenter 46km away"
+}

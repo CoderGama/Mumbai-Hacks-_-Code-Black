@@ -1,0 +1,47 @@
+{
+  "id": "earthquake_m45_5_3",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 5,
+  "severity_level": 5,
+  "severity_label": "Critical",
+  "population_affected": 24837,
+  "zones_affected": [
+    "East",
+    "South",
+    "North",
+    "West"
+  ],
+  "zones_impacted": [
+    "East",
+    "South",
+    "North",
+    "West"
+  ],
+  "hospital_load": 0.95,
+  "hospital_load_pct": 95,
+  "blocked_roads": [
+    "GST Road",
+    "Velachery Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 2997,
+    "trucks": 17,
+    "drones": 11,
+    "food_packets": 4802,
+    "water_liters": 84146,
+    "shelter_kits": 457,
+    "boats": 0,
+    "helicopters": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 63,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 4.6,
+      "epicenter_distance_km": 63,
+      "building_collapse_ratio": 0.09
+    }
+  },
+  "notes": "Critical earthquake M4.5"
+}

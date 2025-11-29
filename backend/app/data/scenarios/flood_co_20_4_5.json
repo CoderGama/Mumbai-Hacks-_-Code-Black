@@ -1,0 +1,47 @@
+{
+  "id": "flood_co_20_4_5",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 12672,
+  "zones_affected": [
+    "North",
+    "East",
+    "South",
+    "Central"
+  ],
+  "zones_impacted": [
+    "North",
+    "East",
+    "South",
+    "Central"
+  ],
+  "hospital_load": 0.77,
+  "hospital_load_pct": 77,
+  "blocked_roads": [
+    "Velachery Road",
+    "GST Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1394,
+    "trucks": 14,
+    "drones": 6,
+    "food_packets": 2776,
+    "water_liters": 34696,
+    "shelter_kits": 169,
+    "boats": 14,
+    "helicopters": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 62,
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 1.98,
+      "rainfall_mm_24h": 441,
+      "inland_or_coastal": "coastal"
+    }
+  },
+  "notes": "Very High coastal flood"
+}

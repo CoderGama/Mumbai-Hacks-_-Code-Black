@@ -1,0 +1,46 @@
+{
+  "id": "cyclone_ne_2_1",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 33674,
+  "zones_affected": [
+    "North",
+    "West",
+    "Central"
+  ],
+  "zones_impacted": [
+    "North",
+    "West",
+    "Central"
+  ],
+  "hospital_load": 0.64,
+  "hospital_load_pct": 64,
+  "blocked_roads": [
+    "Marina",
+    "Mount Road",
+    "Anna Salai"
+  ],
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 133,
+      "cyclone_translation_speed_kmph": 18,
+      "cyclone_direction": "NE"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 1773,
+    "boats": 7,
+    "trucks": 14,
+    "drones": 5,
+    "helicopters": 0,
+    "food_packets": 6238,
+    "water_liters": 98046,
+    "shelter_kits": 392
+  },
+  "outcome": "successful",
+  "response_time_min": 44,
+  "notes": "Moderate cyclone moving NE"
+}

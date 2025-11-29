@@ -197,46 +197,33 @@
   }
 }
 
-/* Hospital Stress Chart */
-.stress-chart {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  height: 200px;
-  padding: 1rem 0;
-  gap: 0.5rem;
-}
-
-.stress-bar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  flex: 1;
-}
-
-.stress-bar {
-  flex: 1;
+/* Hospital Load Chart - Line Chart */
+.hospital-load-chart-wrapper {
   width: 100%;
-  max-width: 40px;
-  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 0.5rem;
-  transition: height 0.5s ease;
+  height: 300px;
+  margin: 1rem 0;
+  padding: 0.5rem;
 }
 
-.stress-value {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  color: white;
+/* Override Recharts default styles for dark theme */
+.hospital-load-chart-wrapper .recharts-cartesian-axis-tick-value {
+  fill: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.stress-label {
-  font-size: 0.6875rem;
-  color: var(--text-muted);
-  margin-top: 0.5rem;
+.hospital-load-chart-wrapper .recharts-cartesian-grid-horizontal line,
+.hospital-load-chart-wrapper .recharts-cartesian-grid-vertical line {
+  stroke: var(--border-dim);
+  stroke-opacity: 0.3;
+}
+
+.hospital-load-chart-wrapper .recharts-line {
+  transition: opacity 0.2s ease;
+}
+
+.hospital-load-chart-wrapper .recharts-line:hover {
+  opacity: 0.9;
 }
 
 /* AI Activity */

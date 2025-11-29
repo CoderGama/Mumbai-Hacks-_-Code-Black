@@ -1,0 +1,44 @@
+{
+  "id": "flood_coastal_2_3",
+  "disaster_type": "flood",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 23337,
+  "zones_affected": [
+    "North",
+    "West",
+    "Central"
+  ],
+  "zones_impacted": [
+    "North",
+    "West",
+    "Central"
+  ],
+  "hospital_load": 0.51,
+  "hospital_load_pct": 51,
+  "blocked_roads": [
+    "Anna Salai"
+  ],
+  "disaster_specific": {
+    "flood": {
+      "water_level_m": 0.96,
+      "rainfall_mm_24h": 210,
+      "inland_or_coastal": "coastal"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 1378,
+    "boats": 7,
+    "trucks": 12,
+    "drones": 5,
+    "helicopters": 0,
+    "food_packets": 4313,
+    "water_liters": 69350,
+    "shelter_kits": 230
+  },
+  "outcome": "successful",
+  "response_time_min": 53,
+  "notes": "Moderate coastal flood scenario"
+}

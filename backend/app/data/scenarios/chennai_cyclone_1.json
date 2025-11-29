@@ -1,0 +1,31 @@
+{
+  "id": "chennai_cyclone_1",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 32000,
+  "zones_affected": ["East", "North"],
+  "zones_impacted": ["East", "North"],
+  "hospital_load": 0.78,
+  "hospital_load_pct": 78,
+  "blocked_roads": ["ECR", "GST Road"],
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 150,
+      "cyclone_translation_speed_kmph": 25,
+      "cyclone_direction": "NE"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 1800,
+    "boats": 5,
+    "trucks": 12,
+    "drones": 3
+  },
+  "outcome": "successful",
+  "response_time_min": 55,
+  "notes": "Cyclone with high wind speeds affecting coastal areas"
+}
+

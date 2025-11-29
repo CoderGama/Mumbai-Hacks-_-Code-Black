@@ -1,0 +1,45 @@
+{
+  "id": "cyclone_se_3_2",
+  "disaster_type": "cyclone",
+  "city": "Chennai",
+  "severity": 3,
+  "severity_level": 3,
+  "severity_label": "High",
+  "population_affected": 52586,
+  "zones_affected": [
+    "West",
+    "North",
+    "East"
+  ],
+  "zones_impacted": [
+    "West",
+    "North",
+    "East"
+  ],
+  "hospital_load": 0.79,
+  "hospital_load_pct": 79,
+  "blocked_roads": [
+    "Mount Road",
+    "Anna Salai"
+  ],
+  "disaster_specific": {
+    "cyclone": {
+      "max_wind_speed_kmph": 151,
+      "cyclone_translation_speed_kmph": 15,
+      "cyclone_direction": "SE"
+    }
+  },
+  "resources_deployed": {
+    "medical_kits": 4232,
+    "boats": 5,
+    "trucks": 16,
+    "drones": 10,
+    "helicopters": 2,
+    "food_packets": 10559,
+    "water_liters": 166057,
+    "shelter_kits": 577
+  },
+  "outcome": "successful",
+  "response_time_min": 64,
+  "notes": "High cyclone moving SE"
+}

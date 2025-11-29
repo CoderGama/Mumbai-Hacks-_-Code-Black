@@ -1,0 +1,45 @@
+{
+  "id": "earthquake_m75_4_9",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 4,
+  "severity_level": 4,
+  "severity_label": "Very High",
+  "population_affected": 16035,
+  "zones_affected": [
+    "East",
+    "Central",
+    "North"
+  ],
+  "zones_impacted": [
+    "East",
+    "Central",
+    "North"
+  ],
+  "hospital_load": 0.87,
+  "hospital_load_pct": 87,
+  "blocked_roads": [
+    "Velachery Road",
+    "Mount Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 1753,
+    "trucks": 12,
+    "drones": 8,
+    "food_packets": 3361,
+    "water_liters": 48734,
+    "shelter_kits": 234,
+    "boats": 0,
+    "helicopters": 2
+  },
+  "outcome": "successful",
+  "response_time_min": 58,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 7.6,
+      "epicenter_distance_km": 21,
+      "building_collapse_ratio": 0.41
+    }
+  },
+  "notes": "Very High earthquake M7.5"
+}

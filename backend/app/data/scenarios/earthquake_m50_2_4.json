@@ -1,0 +1,41 @@
+{
+  "id": "earthquake_m50_2_4",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 2,
+  "severity_level": 2,
+  "severity_label": "Moderate",
+  "population_affected": 7830,
+  "zones_affected": [
+    "North"
+  ],
+  "zones_impacted": [
+    "North"
+  ],
+  "hospital_load": 0.58,
+  "hospital_load_pct": 58,
+  "blocked_roads": [
+    "OMR",
+    "Mount Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 403,
+    "trucks": 8,
+    "drones": 2,
+    "food_packets": 1425,
+    "water_liters": 25106,
+    "shelter_kits": 48,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 47,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 5.2,
+      "epicenter_distance_km": 44,
+      "building_collapse_ratio": 0.11
+    }
+  },
+  "notes": "Moderate earthquake M5.0"
+}

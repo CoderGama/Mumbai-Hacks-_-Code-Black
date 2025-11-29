@@ -1,0 +1,40 @@
+{
+  "id": "earthquake_m40_1_2",
+  "disaster_type": "earthquake",
+  "city": "Chennai",
+  "severity": 1,
+  "severity_level": 1,
+  "severity_label": "Low",
+  "population_affected": 5542,
+  "zones_affected": [
+    "South"
+  ],
+  "zones_impacted": [
+    "South"
+  ],
+  "hospital_load": 0.39,
+  "hospital_load_pct": 39,
+  "blocked_roads": [
+    "Mount Road"
+  ],
+  "resources_deployed": {
+    "medical_kits": 142,
+    "trucks": 4,
+    "drones": 4,
+    "food_packets": 1188,
+    "water_liters": 17221,
+    "shelter_kits": 20,
+    "boats": 0,
+    "helicopters": 0
+  },
+  "outcome": "successful",
+  "response_time_min": 31,
+  "disaster_specific": {
+    "earthquake": {
+      "magnitude": 4.2,
+      "epicenter_distance_km": 83,
+      "building_collapse_ratio": 0.05
+    }
+  },
+  "notes": "Low earthquake M4.0"
+}
