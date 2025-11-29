@@ -61,3 +61,5 @@ echo "   Press Ctrl+C to stop all servers"
 trap "kill $BACKEND_PID $FRONTEND_PID 2>/dev/null" EXIT
 wait
 
+
+# touch update 11/29/2025 12:45:26
